@@ -1,0 +1,167 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================= */
+/* ROOT THEME COLORS */
+/* ============================= */
+
+:root {
+  --background: #0b1c2d;
+  --foreground: #e0e8f0;
+  --card: #0f2338;
+  --card-foreground: #e0e8f0;
+  --primary: #00ff88;
+  --secondary: #112a42;
+  --muted: #112a42;
+  --muted-foreground: #7a8fa3;
+  --border: #1a3a55;
+  --neon: #00ff88;
+  --navy-dark: #071520;
+}
+
+/* ============================= */
+/* THEME MAPPING */
+/* ============================= */
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-neon: var(--neon);
+  --color-navy-dark: var(--navy-dark);
+}
+
+/* ============================= */
+/* BASE STYLES */
+/* ============================= */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUpFade 1s ease forwards;
+}
+
+/* ============================= */
+/* NEON EFFECTS */
+/* ============================= */
+
+.neon-text {
+  color: var(--neon);
+  text-shadow:
+    0 0 5px rgba(0, 255, 136, 0.8),
+    0 0 15px rgba(0, 255, 136, 0.6),
+    0 0 30px rgba(0, 255, 136, 0.4),
+    0 0 60px rgba(0, 255, 136, 0.2);
+}
+
+.neon-border {
+  border: 1px solid var(--neon);
+  box-shadow:
+    0 0 10px rgba(0, 255, 136, 0.4),
+    0 0 25px rgba(0, 255, 136, 0.2),
+    inset 0 0 10px rgba(0, 255, 136, 0.1);
+}
+
+.neon-button {
+  box-shadow:
+    0 0 15px rgba(0, 255, 136, 0.5),
+    0 0 30px rgba(0, 255, 136, 0.3);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  box-shadow:
+    0 0 25px rgba(0, 255, 136, 0.7),
+    0 0 50px rgba(0, 255, 136, 0.5);
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* GLASS EFFECT */
+/* ============================= */
+
+.glass-section {
+  background: rgba(7, 21, 32, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 136, 0.08);
+}
+
+/* ============================= */
+/* TEXT IMPROVEMENTS */
+/* ============================= */
+
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.6;
+}
