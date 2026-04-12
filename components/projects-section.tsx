@@ -5,31 +5,31 @@ import { ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Network Traffic Analyzer",
-    tools: ["Python", "Scapy", "Wireshark"],
+    title: "SIEM Log Analysis & Threat Detection",
+    tools: ["Splunk", "Log Analysis", "Event Correlation"],
     description:
-      "Built a Python-based network packet analyzer that captures and inspects live traffic, identifies suspicious patterns, and generates alerts for potential intrusions.",
+      "Analyzed 5,000+ system and network log events using Splunk to detect brute-force attacks and unauthorized access attempts. Created dashboards and alerts to monitor security events and improve threat visibility.",
     github: "#",
   },
   {
-    title: "Vulnerability Scanner",
-    tools: ["Python", "Nmap", "Bash"],
+    title: "Network Traffic Analysis",
+    tools: ["Wireshark", "TCP/IP", "DNS", "HTTP"],
     description:
-      "Developed an automated vulnerability scanning tool that integrates Nmap scans with custom Python scripts to identify open ports, services, and known CVEs.",
+      "Captured and analyzed network packets using Wireshark to identify suspicious traffic patterns. Investigated DNS queries, HTTP traffic, and indicators of compromise (IOCs) for potential threats.",
     github: "#",
   },
   {
-    title: "SIEM Dashboard",
-    tools: ["Splunk", "Python", "Regex"],
+    title: "Vulnerability Scanning & Enumeration",
+    tools: ["Nmap", "Kali Linux", "Network Scanning"],
     description:
-      "Created custom Splunk dashboards and correlation rules to monitor security events, detect anomalies, and streamline incident response workflows.",
+      "Performed network scanning using Nmap to identify open ports and running services. Conducted basic enumeration and vulnerability assessment of target systems.",
     github: "#",
   },
   {
-    title: "Web App Pentesting Lab",
-    tools: ["Burp Suite", "OWASP ZAP", "Kali Linux"],
+    title: "Security Monitoring & Incident Response Basics",
+    tools: ["SIEM", "MITRE ATT&CK", "Threat Detection"],
     description:
-      "Set up a local pentesting environment to practice web application security testing, documenting findings for OWASP Top 10 vulnerabilities.",
+      "Applied SOC concepts such as alert monitoring, log correlation, and basic incident response using MITRE ATT&CK framework to understand attacker techniques and improve detection strategies.",
     github: "#",
   },
 ]

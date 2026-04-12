@@ -1,33 +1,75 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { Network, MonitorCog, Wrench, Code2, Cloud } from "lucide-react"
+import { ShieldCheck, Network, MonitorCog, Wrench, Code2, Cloud } from "lucide-react"
 
 const skillCategories = [
   {
+    icon: ShieldCheck,
+    title: "SOC & Cybersecurity",
+    skills: [
+      "SIEM (Splunk - Basics)",
+      "Log Analysis",
+      "Event Correlation",
+      "Alert Monitoring",
+      "Incident Response (Basics)",
+      "Threat Detection",
+      "Threat Intelligence",
+      "MITRE ATT&CK",
+      "IOC Identification",
+    ],
+  },
+  {
     icon: Network,
     title: "Networking",
-    skills: ["TCP/IP", "DNS", "DHCP", "Firewalls", "VPN", "Subnetting", "OSI Model"],
+    skills: [
+      "TCP/IP",
+      "DNS",
+      "HTTP/HTTPS",
+      "Network Security Monitoring",
+      "Packet Analysis",
+      "CCNA Fundamentals",
+    ],
   },
   {
     icon: MonitorCog,
     title: "Operating Systems",
-    skills: ["Linux (Ubuntu, Kali)", "Windows Server", "Command Line", "System Administration"],
+    skills: [
+      "Linux (Ubuntu, Kali)",
+      "Windows",
+      "Command Line",
+      "Basic System Administration",
+    ],
   },
   {
     icon: Wrench,
     title: "Security Tools",
-    skills: ["Nmap", "Wireshark", "Metasploit", "Burp Suite", "Splunk", "Snort"],
+    skills: [
+      "Splunk",
+      "Wireshark",
+      "Nmap",
+      "Kali Linux",
+      "Microsoft Sentinel (Learning)",
+    ],
   },
   {
     icon: Code2,
-    title: "Programming",
-    skills: ["Python", "Bash Scripting", "SQL", "Regular Expressions"],
+    title: "Programming & Query",
+    skills: [
+      "Python (Basics)",
+      "PowerShell (Basics)",
+      "KQL (Learning)",
+    ],
   },
   {
     icon: Cloud,
-    title: "Cloud & Other",
-    skills: ["AWS Basics", "Docker Fundamentals", "Git & GitHub", "OWASP Top 10"],
+    title: "Concepts & Frameworks",
+    skills: [
+      "OWASP Top 10",
+      "Vulnerability Assessment",
+      "Risk Analysis",
+      "Security Monitoring",
+    ],
   },
 ]
 

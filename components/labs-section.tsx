@@ -5,32 +5,32 @@ import { ExternalLink } from "lucide-react"
 
 const platforms = [
   {
-    name: "TryHackMe",
-    description: "Completed 50+ rooms covering topics from basic networking to advanced exploitation.",
-    stat: "50+ Rooms",
-    url: "https://tryhackme.com",
-    color: "from-[#1C2538] to-[#212C42]",
+    name: "Splunk (SIEM Practice)",
+    description:
+      "Worked on log analysis, dashboard creation, and alert generation to detect brute-force attacks and suspicious activities.",
+    stat: "SIEM Logs & Alerts",
+    url: "#",
   },
   {
-    name: "HackTheBox",
-    description: "Active participant in challenges and retired machines for real-world pentesting practice.",
-    stat: "15+ Machines",
-    url: "https://hackthebox.com",
-    color: "from-[#1C2538] to-[#212C42]",
+    name: "Wireshark (Traffic Analysis)",
+    description:
+      "Captured and analyzed network packets to investigate DNS queries, HTTP traffic, and identify indicators of compromise (IOCs).",
+    stat: "Packet Analysis",
+    url: "#",
   },
   {
-    name: "PortSwigger Academy",
-    description: "Studied and practiced web security topics including SQL injection, XSS, and authentication flaws.",
-    stat: "Web Security Labs",
-    url: "https://portswigger.net/web-security",
-    color: "from-[#1C2538] to-[#212C42]",
+    name: "Nmap (Scanning & Enumeration)",
+    description:
+      "Performed network scanning to identify open ports, services, and basic vulnerabilities using Nmap in a controlled lab environment.",
+    stat: "Port Scanning",
+    url: "#",
   },
   {
-    name: "OverTheWire",
-    description: "Completed Bandit and Natas wargames to strengthen Linux and web security fundamentals.",
-    stat: "Bandit + Natas",
-    url: "https://overthewire.org",
-    color: "from-[#1C2538] to-[#212C42]",
+    name: "Microsoft Sentinel (Learning)",
+    description:
+      "Currently learning cloud-based SIEM, KQL queries, and threat detection techniques for modern SOC environments.",
+    stat: "Cloud SIEM",
+    url: "#",
   },
 ]
 
@@ -48,8 +48,10 @@ export function LabsSection() {
       },
       { threshold: 0.1 }
     )
+
     const elements = sectionRef.current?.querySelectorAll("[data-animate]")
     elements?.forEach((el) => observer.observe(el))
+
     return () => observer.disconnect()
   }, [])
 
@@ -63,7 +65,7 @@ export function LabsSection() {
             data-animate
             className="mb-3 text-3xl font-bold text-foreground opacity-0 sm:text-4xl"
           >
-            Labs & <span className="text-primary">Practice</span>
+            Practical <span className="text-primary">Experience</span>
           </h2>
           <div
             data-animate
@@ -74,26 +76,27 @@ export function LabsSection() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {platforms.map((platform, i) => (
-            <a
+            <div
               key={platform.name}
-              href={platform.url}
-              target="_blank"
-              rel="noopener noreferrer"
               data-animate
               className="group flex flex-col rounded-xl border border-border bg-card/50 p-6 opacity-0 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-card"
               style={{ animationDelay: `${0.15 * (i + 1)}s` }}
             >
               <div className="mb-3 flex items-center justify-between">
-                <h3 className="font-semibold text-foreground">{platform.name}</h3>
+                <h3 className="font-semibold text-foreground">
+                  {platform.name}
+                </h3>
                 <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
               </div>
+
               <span className="mb-3 inline-block w-fit rounded-md border border-primary/20 bg-primary/5 px-2.5 py-0.5 font-mono text-xs text-primary">
                 {platform.stat}
               </span>
+
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {platform.description}
               </p>
-            </a>
+            </div>
           ))}
         </div>
       </div>

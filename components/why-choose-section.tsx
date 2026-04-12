@@ -1,33 +1,38 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { BookOpen, Network, FlaskConical, ScanEye, Clock } from "lucide-react"
+import { ShieldCheck, Network, Activity, Search, BookOpen } from "lucide-react"
 
 const reasons = [
   {
-    icon: BookOpen,
-    title: "Passionate Learner",
-    description: "Constantly exploring new cybersecurity concepts, tools, and techniques through self-study and online platforms.",
+    icon: ShieldCheck,
+    title: "SOC-Focused Skillset",
+    description:
+      "Hands-on experience with SIEM tools like Splunk, log analysis, and event correlation aligned with real-world SOC operations.",
+  },
+  {
+    icon: Activity,
+    title: "Threat Detection & Monitoring",
+    description:
+      "Ability to detect brute-force attacks, unauthorized access attempts, and suspicious activities through continuous log monitoring.",
   },
   {
     icon: Network,
     title: "Strong Networking Foundation",
-    description: "Solid understanding of TCP/IP, DNS, firewalls, and network protocols that form the backbone of security operations.",
+    description:
+      "Good understanding of TCP/IP, DNS, HTTP/HTTPS, and network traffic analysis essential for identifying security threats.",
   },
   {
-    icon: FlaskConical,
-    title: "Practical Lab Experience",
-    description: "Hands-on skills developed through TryHackMe, HackTheBox, and personal home lab environments.",
+    icon: Search,
+    title: "Analytical & Detail-Oriented",
+    description:
+      "Focused approach to analyzing logs, identifying anomalies, and investigating indicators of compromise (IOCs).",
   },
   {
-    icon: ScanEye,
-    title: "Detail-Oriented Mindset",
-    description: "Meticulous approach to analyzing logs, identifying anomalies, and documenting security findings.",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Learning Attitude",
-    description: "Dedicated to staying current with the ever-evolving threat landscape and security best practices.",
+    icon: BookOpen,
+    title: "Continuous Learning in SOC Tools",
+    description:
+      "Actively learning Microsoft Sentinel and KQL while strengthening knowledge of MITRE ATT&CK and threat detection techniques.",
   },
 ]
 
@@ -45,8 +50,10 @@ export function WhyChooseSection() {
       },
       { threshold: 0.1 }
     )
+
     const elements = sectionRef.current?.querySelectorAll("[data-animate]")
     elements?.forEach((el) => observer.observe(el))
+
     return () => observer.disconnect()
   }, [])
 
@@ -80,6 +87,7 @@ export function WhyChooseSection() {
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
                 <reason.icon className="h-5 w-5" />
               </div>
+
               <div>
                 <h3 className="mb-1 font-semibold text-foreground">
                   {reason.title}

@@ -4,36 +4,70 @@ import { useEffect, useRef } from "react"
 import { Award, ExternalLink } from "lucide-react"
 
 const certifications = [
-  {
-    name: "CompTIA Security+",
-    issuer: "CompTIA",
-    year: "2025",
-    verifyUrl: "#",
+
+   {
+    name: " SOC Analyst Level 1 & 2 Masterclass",
+    issuer: "Udemy",
+    year: "2026",
+    verifyUrl: "https://www.udemy.com/certificate/UC-0af90e11-68ae-4cab-b91a-28a7ccb1d50d/",
   },
-  {
-    name: "Certified in Cybersecurity (CC)",
-    issuer: "ISC2",
-    year: "2025",
-    verifyUrl: "#",
+
+ {
+    name: " Cyber Security-SOC and SIEM (SPLUNK&ELK) for Beginners",
+    issuer: "Udemy",
+    year: "2026",
+    verifyUrl: "https://www.udemy.com/certificate/UC-ea164ff8-4a82-450f-a6c2-e242744a717f/",
   },
-  {
-    name: "Google Cybersecurity Professional Certificate",
-    issuer: "Google / Coursera",
-    year: "2024",
-    verifyUrl: "#",
+
+ {
+    name: " The Complete Hands-On Cybersecurity Analyst Course ",
+    issuer: "Udemy",
+    year: "2026",
+    verifyUrl: "https://www.udemy.com/certificate/UC-c59f84b1-157f-4d57-9d4d-a6fbad110f53/",
   },
-  {
-    name: "Introduction to Cybersecurity",
-    issuer: "Cisco Networking Academy",
-    year: "2024",
-    verifyUrl: "#",
-  },
-  {
+
+
+ {
     name: "Ethical Hacking (Elite)",
     issuer: "NPTEL (IIT KHARAGPUR)",
     year: "2025",
-    verifyUrl: "#", // add your actual certificate link here
+    verifyUrl: "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs142/Course/NPTEL25CS142S106690185310368447.pdf", // add your actual certificate link here
   },
+
+
+  {
+    name: " AWS For Everyone  ",
+    issuer: "Udemy",
+    year: "2026",
+    verifyUrl: "https://www.udemy.com/certificate/UC-d98e372f-50dd-4fa2-8a55-a65951fdc777/",
+  },
+
+  {
+    name: "Cisco Certified Network Associate Trainning ( CCNA )",
+    issuer: "Webasha Technologies,Pune,India",
+    year: "2026",
+    verifyUrl: "https://lms.webasha.com/certificate/57a8404b49",
+  },
+
+  {
+    name: "Cybersecurity Job Simulation",
+    issuer: "Mastercard",
+    year: "2026",
+    verifyUrl: "https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_69d6ac46fd6a566814346588_1775851814747_completion_certificate.pdf",
+  },
+  {
+    name: "Cyber Job Simulation",
+    issuer: "Delollite",
+    year: "2026",
+    verifyUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69d6ac46fd6a566814346588_1775677062485_completion_certificate.pdf",
+  },
+  {
+    name: "Cybersecurity Analyst Job Simulation",
+    issuer: "TATA",
+    year: "2026",
+    verifyUrl: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69d6ac46fd6a566814346588_1775850978707_completion_certificate.pdf",
+  },
+  
 ]
 
 export function CertificationsSection() {

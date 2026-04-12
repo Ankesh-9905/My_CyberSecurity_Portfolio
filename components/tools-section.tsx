@@ -3,18 +3,18 @@
 import { useEffect, useRef, useState } from "react"
 
 const tools = [
-  { name: "Linux", level: 85 },
-  { name: "Networking", level: 80 },
-  { name: "Nmap", level: 75 },
+  { name: "Splunk (SIEM)", level: 75 },
   { name: "Wireshark", level: 78 },
-  { name: "Burp Suite", level: 70 },
-  { name: "Python", level: 72 },
+  { name: "Nmap", level: 75 },
+  { name: "Linux (Kali/Ubuntu)", level: 80 },
+  { name: "Networking (TCP/IP, DNS)", level: 80 },
+  { name: "Microsoft Sentinel (Learning)", level: 65 },
 ]
 
 function getLevelLabel(level: number) {
-  if (level >= 85) return "Excellent"
-  if (level >= 75) return "Very Good"
-  return "Good"
+  if (level >= 80) return "Strong"
+  if (level >= 70) return "Intermediate"
+  return "Basic"
 }
 
 function ProgressBar({ name, level }: { name: string; level: number }) {
