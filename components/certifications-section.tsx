@@ -49,6 +49,13 @@ const certifications = [
     verifyUrl: "https://lms.webasha.com/certificate/57a8404b49",
   },
 
+     {
+    name: "Red Hat Certified System Administrator ( RHCSA )",
+    issuer: "Webasha Technologies,Pune,India ",
+    year: "2026",
+    verifyUrl: "https://lms.webasha.com/certificate/9e6a77e722",
+  },
+
   {
     name: "Cybersecurity Job Simulation",
     issuer: "Mastercard",
