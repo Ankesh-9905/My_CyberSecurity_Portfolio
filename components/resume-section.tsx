@@ -72,7 +72,7 @@ export function ResumeSection() {
           <div className="flex flex-wrap items-center justify-center gap-5">
             {/* View */}
             <a
-              href="/Ankesh_Kumar_Yadav_Resume.pdf"
+              href="/Ankesh_Yadav_SOC Analyst_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="neon-button inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
