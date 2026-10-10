@@ -83,7 +83,7 @@ export function ResumeSection() {
 
             {/* Download */}
             <a
-              href="/Ankesh_Kumar_Yadav_Resume.pdf"
+              href="/Ankesh_Yadav_SOC Analyst_Resume.pdf"
               download
               className="inline-flex items-center gap-2 rounded-lg border border-primary px-7 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
             >
