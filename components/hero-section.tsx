@@ -53,7 +53,7 @@ export function HeroSection() {
             </h1>
 
             <p className="mb-6 text-lg font-medium text-muted-foreground sm:text-xl">
-              Cybersecurity Professional | SOC Analyst Aspirant
+              Cybersecurity Professional | Certified SOC Analyst
             </p>
 
             <p className="mx-auto mb-8 max-w-lg leading-relaxed text-muted-foreground lg:mx-0">
@@ -66,7 +66,7 @@ export function HeroSection() {
             <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
 
               <a
-                href="/Ankesh_Kumar_Yadav_Resume.pdf"
+                href="/Ankesh_Yadav_SOC Analyst_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
               >
